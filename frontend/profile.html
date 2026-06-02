@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <span>👤 Profile</span>
+    <div>
+        <a href="dashboard.html">📋 Dashboard</a>
+        <button id="logoutBtn">🚪 Logout</button>
+    </div>
+</nav>
+
+<div class="container">
+    <h2>User Information</h2>
+
+    <div id="profileView">
+        <p><strong>Username:</strong> <span id="usernameField">Loading...</span></p>
+        <p><strong>Full Name:</strong> <span id="nameField">Loading...</span></p>
+        <p><strong>Email:</strong> <span id="emailField">Loading...</span></p>
+        
+        <button id="editProfileBtn" style="margin-top: 20px;">✏️ Edit Profile</button>
+    </div>
+
+    <div id="profileEdit" style="display: none;">
+        <h3>Edit Profile</h3>
+        <input type="text" id="editUsername" placeholder="Username">
+        <input type="text" id="editName" placeholder="Full Name">
+        <input type="email" id="editEmail" placeholder="Email">
+        
+        <button id="saveProfileBtn">💾 Save Changes</button>
+        <button id="cancelEditBtn" style="background: #95a5a6;">❌ Cancel</button>
+    </div>
+</div>
+
+<script src="scripts/profile.js"></script>
+</body>
+</html>

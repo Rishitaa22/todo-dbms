@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <span>📋 Dashboard</span>
+    <div>
+        <a href="profile.html">👤 Profile</a>
+        <button id="logoutBtn">🚪 Logout</button>
+    </div>
+</nav>
+
+<div class="container">
+    <h2>Your Tasks</h2>
+
+    <div class="task-input-container">
+        <input type="text" id="taskInput" placeholder="Enter a new task...">
+        <select id="prioritySelect">
+            <option value="low">🔵 Low Priority</option>
+            <option value="medium">🟡 Medium Priority</option>
+            <option value="high">🔴 High Priority</option>
+        </select>
+        <button id="addTaskBtn">+ Add Task</button>
+    </div>
+
+    <ul id="taskList"></ul>
+</div>
+
+<script src="scripts/dashboard.js"></script>
+</body>
+</html>

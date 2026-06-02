@@ -1,0 +1,237 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav {
+    background: #2c3e50;
+    padding: 15px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+nav a, nav button {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 8px 15px;
+    background-color: #34495e;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav a:hover, nav button:hover {
+    background-color: #1abc9c;
+}
+
+nav span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    border-bottom: 2px solid #1abc9c;
+    padding-bottom: 10px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+    outline: none;
+    transition: 0.2s;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.3);
+}
+
+/* Buttons */
+button {
+    width: auto;
+    padding: 12px 20px;
+    margin-top: 10px;
+    margin-right: 8px;
+    background: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #16a085;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Task Input Container */
+#taskInput {
+    width: calc(100% - 110px);
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: top;
+}
+
+#addTaskBtn {
+    width: 100px;
+    margin-top: 0;
+}
+
+/* Task List */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+li {
+    background: #ecf0f1;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #1abc9c;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background: #d5dbdb;
+}
+
+/* Task Buttons */
+li button {
+    width: auto;
+    margin-left: 8px;
+    padding: 6px 12px;
+    font-size: 12px;
+    background: #e74c3c;
+}
+
+li button:first-of-type {
+    background: #3498db;
+}
+
+li button:hover {
+    opacity: 0.8;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #1abc9c;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #16a085;
+    text-decoration: underline;
+}
+
+/* Auth page links */
+p a {
+    color: #1abc9c;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Profile Edit Form */
+#profileEdit {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+#profileEdit h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+#profileEdit input {
+    margin-bottom: 10px;
+}
+
+/* Task Input Container */
+.task-input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.task-input-container input {
+    flex: 1;
+}
+
+.task-input-container select {
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    background: white;
+    font-size: 14px;
+    min-width: 140px;
+}
+
+.task-input-container select:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.3);
+}
+
+/* Task Edit Input */
+li input[type="text"] {
+    padding: 8px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+li select {
+    padding: 8px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-right: 10px;
+}
